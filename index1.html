@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Javascript </title>
+    <style>
+        .main{
+            display:flex;
+            justify-content:center;
+        }
+        #first,
+        #second{
+            width:30%;
+            border:1px solid #ddd;
+            padding:1%;
+            margin:1%;
+        }
+    </style>
+</head>
+<body>
+<div class="main">
+    <div id="first">
+        A
+    </div>
+    <div id="second">
+        B
+    </div>
+</div>
+<div class="main">
+    second parent
+</div>
+</body>
+</html>
+<script>
+var a=document.getElementById("first") ; 
+var classAttribute=document.getElementsByClassName("main");
+var tagAttribute=document.getElementsByTagName("body")
+console.log(a);
+console.log(classAttribute[0]);
+console.log(classAttribute[1]);
+console.log(tagAttribute);
+ 
+</script>
